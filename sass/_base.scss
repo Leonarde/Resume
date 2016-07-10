@@ -1,0 +1,50 @@
+ @mixin inline-block {
+    display: inline-block;
+    *zoom: 1;
+    *display: inline;   
+}
+ 
+@mixin t-o {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+@mixin icon($width, $height) {
+    @include inline-block;
+    width: $width;
+    height: $height;
+    line-height: $height;
+    padding: 0 4px;
+    overflow: hidden;
+}
+@mixin clearfix {
+    *zoom: 1;
+    &:after {
+        content: ".";
+        display: block;
+        clear: both;
+        height: 0;
+        font-size: 0;
+        overflow: hidden;
+    }
+}
+@mixin button {
+    font-weight: normal;
+    text-decoration: none;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    border-radius: 5px;
+    @include inline-block;
+    cursor: pointer;
+    border: none;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    transition: all .3s ease-in-out;
+}
