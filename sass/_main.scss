@@ -166,8 +166,8 @@ a {
 			font-size: 16px;
 			@include inline-block;
 			border-radius: 2px;
-			-webkit-animation: breathe 2s ease-in-out infinite both;
-			animation: breathe 2s ease-in-out infinite both;
+			-webkit-animation: breathe 1.8s ease-in-out infinite both;
+			animation: breathe 1.8s ease-in-out infinite both;
 			@media only screen and (min-width: 1024px) {
 				font-size: 18px;
 			}
@@ -177,8 +177,8 @@ a {
 						opacity: .4;
 					}
 					50% {
-						-webkit-transform: scale(1.1);
-						transform: scale(1.1);
+						-webkit-transform: scale(1.2);
+						transform: scale(1.2);
 						opacity: 1;
 					}
 					100% {
@@ -190,8 +190,8 @@ a {
 						opacity: .4;
 					}
 					50% {
-						-webkit-transform: scale(1.1);
-						transform: scale(1.1);
+						-webkit-transform: scale(1.2);
+						transform: scale(1.2);
 						opacity: 1;
 					}
 					100% {
