@@ -1,6 +1,6 @@
 body {
-	min-height:500px;
-	font-family: 'Microsoft YaHei', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+	min-height: 560px;
+	font-family:'Microsoft YaHei', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
 	font-size: 14px;
 	background-color: #fcfcfc;
 	color: #666;
@@ -34,6 +34,22 @@ a {
 		color: #006a9c;
 	}
 }
+.key-point {
+	padding: 5px 0;
+	color: #aaa;
+	font-size: 12px;
+	@media only screen and (min-width: 1024px) {
+		font-size: 14px;
+	}
+}
+.name, .subtitle, .key-point {
+	@media only screen and (min-width: 1024px) {
+		padding-left: 6px;
+		padding-right: 6px;
+		line-height: 1.8;
+		text-align: left;
+	}
+}
 .content {
 	width: 100%;    
 }
@@ -52,6 +68,7 @@ a {
 			transition: all .3s ease-in;
 	@media only screen and (min-width: 1024px) {
 		position: relative;
+		padding: 0 20px 0 26px;
 		width: 460px;
 		height: 52px;
 		border: none;
@@ -96,16 +113,16 @@ a {
 				-webkit-transition: all .5s ease-in;
 					 -o-transition: all .5s ease-in;
 					    transition: all .5s ease-in;
-					    background: rgba(255,255,255,.95);
+					    background: rgba(255,255,255,.96);
 			    .connect-wrapper {
 			    	margin-top: 200px;
-			    	padding: 0 30px;
-					width: 230px;
+			    	padding: 0 50px;
+					width: auto;
 					vertical-align: top;
 					@include inline-block;
 			    }
 			    .connect-footer {
-			    	margin-top: 100px;
+			    	margin-top: 60px;
 			    	text-align: center;
 			    }
 			    .button-giveup {
@@ -132,6 +149,9 @@ a {
 		        transition: all .5s ease-in;
 		a {
 			font-size: 25px;
+			@media only screen and (min-width: 1024px) {
+				font-size: 42px;
+			}
 		}
 		.connect-wrapper {	
 			padding: 20px 0;
@@ -144,9 +164,16 @@ a {
 			}
 			span {
 				font-size: 15px;
+				color: #adadae;
+				@media only screen and (min-width: 1024px) {
+					font-size: 17px;
+				}
 			}
 			.tel-number {
 				font-size: 32px;
+				@media only screen and (min-width: 1024px) { 
+					font-size: 62px;
+				}
 			}
 		}
 		.connect-footer {
@@ -160,6 +187,10 @@ a {
 		height: 58px;
 		line-height: 58px;
 		text-align: right;
+		@media only screen and (min-width: 1024px) { 
+			height: auto;
+			line-height: 48px;
+		}
 		.warning {
 			margin-right: 15px;
 			color: #f00;
@@ -169,6 +200,7 @@ a {
 			-webkit-animation: breathe 1.8s ease-in-out infinite both;
 			animation: breathe 1.8s ease-in-out infinite both;
 			@media only screen and (min-width: 1024px) {
+				margin-right: 125px;
 				font-size: 18px;
 			}
 			@at-root {
@@ -214,11 +246,12 @@ a {
     letter-spacing: 1px;
 	background-color: #f54348;
 	@media only screen and (min-width: 1024px) {
-		width: 180px;
+		width: 200px;
 		font-size: 22px;
+		float: left;
 	}
 	&:hover, &:active {
-        opacity: .65;
+        opacity: .6;
     };
 }
 
@@ -228,11 +261,11 @@ a {
 	line-height: 34px;
     height: 34px;
 	font-size: 14px;
-	color: #9f9f9f;
+	color: #aeaeae;
 	background-color: #f0f0f0;
 	float: right;
 	&:hover, &:active {
-        opacity: .6;
+        opacity: .55;
     };
 }
 
@@ -268,7 +301,7 @@ a {
 		transition: all .4s ease-in-out;
 		@media only screen and (min-width: 1024px) {
 			width: 300px;
-			padding: 40px 20px;
+			padding: 40px 20px 38px;
 			float: left;
 		}
 		img {
@@ -284,7 +317,7 @@ a {
 		transition: all .4s ease-in-out;
 		@media only screen and (min-width: 1024px) {
 			width: 460px;
-			padding: 70px 20px 20px;
+			padding: 30px 20px 20px;
 			float: right;
 		}
 	}
@@ -303,10 +336,11 @@ a {
 	padding: 0 5%;
 	text-align: left;
 	font-size: 13px;
-	color: #778;
+	color: #999;
 	background-color: #f4f4f4;
 	@include clearfix;
 	@media only screen and (min-width: 1024px) {
+		padding: 0 6px;
 		font-size: 14px;
 	}
 	.service-tag {
@@ -320,8 +354,8 @@ a {
 					font-size: 12px;
 				}
 				@include icon(auto, 18px);
-			    border: 1px solid #99a;
-			    border-radius: 2px;
+			    border: 1px solid #aab;
+			    border-radius: 3px;
 			    @media only screen and (min-width: 1024px) {
 			    	height: 20px;
 			    	line-height: 20px;
@@ -335,6 +369,9 @@ a {
 }
 .sale-tag {
 	padding: 0 5%;
+	@media only screen and (min-width: 1024px) {
+		padding: 0 6px;
+	}
 	ul {
 		margin: 20px 0 7px;
 		padding: 0;
@@ -342,7 +379,7 @@ a {
 		font-size: 13px;
 		color: #aaa;
 		@media only screen and (min-width: 1024px) {
-			margin: 27px 0 10px;
+			margin: 8px 0 10px;
 			font-size: 14px;
 		}
 		li {
